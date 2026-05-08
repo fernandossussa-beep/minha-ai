@@ -1,0 +1,2 @@
+# minha-ai
+AI personalizada
