@@ -50,3 +50,14 @@ def consulta():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+from flask import request, jsonify
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    user-input = request.json.get("message")
+    # Aqui você coloca a lógica da ERA AI personalizada
+    resposta =f"Você disse: {user-input}"
+    return jsonify({"response": resposta})
+
+if __name__== "__main__":
+    app.run(host=0.0.0.0", port=5000)
